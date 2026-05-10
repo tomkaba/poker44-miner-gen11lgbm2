@@ -5,7 +5,7 @@
   "model_version": "11.0b",
   "framework": "python-lightgbm-rebalanced",
   "license": "MIT",
-  "repo_url": "https://github.com/tomkaba/Poker44-gen11lgbm2",
+  "repo_url": "https://github.com/tomkaba/poker44-miner-gen11lgbm2",
   "repo_commit": "4f6b81cda8a7de3105063e6c18612e6d51f5b01e",
   "inference_mode": "remote",
   "training_data_statement": "No validator-private data used.",
