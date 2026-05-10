@@ -1,4 +1,4 @@
-# poker44-miner-gen11lgbm2
+# Poker44-gen11lgbm2
 
 Minimal release repository for model gen11lgbm2.
 
@@ -9,8 +9,8 @@ a final 50/50 bot-human rebalance step.
 ## Quick start
 
 ```bash
-git clone https://github.com/tomkaba/poker44-miner-gen11lgbm2.git
-cd poker44-miner-gen11lgbm2
+git clone https://github.com/tomkaba/Poker44-gen11lgbm2.git
+cd Poker44-gen11lgbm2
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
