@@ -23,6 +23,6 @@
     "poker44/utils/model_manifest.py",
     "poker44/validator/synapse.py"
   ],
-  "implementation_sha256": "1b981ac1f43934609d1b1f6d468e81b2de9e73188405ab2bd0f55b4215b601c7",
+  "implementation_sha256": "feb3d6f9f9767fd2dca45de823f5f83b7579cceb2dfd13733e34fac3e705a82b",
   "notes": "Gen11lgbm2 LightGBM chunk scorer with 50/50 rebalancing."
 }
