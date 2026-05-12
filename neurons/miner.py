@@ -99,7 +99,19 @@ class Miner(BaseMinerNeuron):
 
         self.model_manifest = build_local_model_manifest(
             repo_root=repo_root,
-            implementation_files=[Path(__file__).resolve()],
+            implementation_files=[
+                repo_root / "models" / "benchmark_lgbm_model.pkl",
+                repo_root / "models" / "benchmark_lgbm_profile.json",
+                Path(__file__).resolve(),
+                repo_root / "poker44" / "__init__.py",
+                repo_root / "poker44" / "base" / "miner.py",
+                repo_root / "poker44" / "base" / "neuron.py",
+                repo_root / "poker44" / "miner_heuristics.py",
+                repo_root / "poker44" / "utils" / "config.py",
+                repo_root / "poker44" / "utils" / "misc.py",
+                repo_root / "poker44" / "utils" / "model_manifest.py",
+                repo_root / "poker44" / "validator" / "synapse.py",
+            ],
             defaults={
                 "model_name": "poker44_gen11lgbm2",
                 "model_version": "11.0b",
@@ -134,6 +146,10 @@ class Miner(BaseMinerNeuron):
         bt.logging.info(
             f"Manifest digest={self.manifest_digest} "
             f"inference_mode={self.model_manifest.get('inference_mode', '')}"
+        )
+        bt.logging.info(
+            f"Implementation sha256={self.model_manifest.get('implementation_sha256', '')} "
+            f"files={len(self.model_manifest.get('implementation_files', []) or [])}"
         )
         bt.logging.info(f"Project root: {repo_root}")
 
