@@ -6,7 +6,7 @@
   "framework": "python-lightgbm-rebalanced",
   "license": "MIT",
   "repo_url": "https://github.com/tomkaba/poker44-miner-gen11lgbm2",
-  "repo_commit": "a735ae87da89a1e6003a618a6c61f3cb870ab20b",
+  "repo_commit": "959e8cd43268629e93cee5ccd580f8566bd037b1",
   "inference_mode": "remote",
   "training_data_statement": "No validator-private data used.",
   "data_attestation": "This miner does not train on validator-private human data.",
@@ -15,6 +15,7 @@
     "models/benchmark_lgbm_model.pkl",
     "models/benchmark_lgbm_profile.json",
     "neurons/miner.py",
+    "poker44/__init__.py",
     "poker44/base/miner.py",
     "poker44/base/neuron.py",
     "poker44/miner_heuristics.py",
@@ -23,6 +24,6 @@
     "poker44/utils/model_manifest.py",
     "poker44/validator/synapse.py"
   ],
-  "implementation_sha256": "8e1bd383eed3ae573903fb02277073ac958d5c317191b1682995507dc9dac7d5",
+  "implementation_sha256": "b53760ca44bbde7041f688e907093da36d9da449c2b394b48fc49686dd03f9eb",
   "notes": "Gen11lgbm2 LightGBM chunk scorer with 50/50 rebalancing."
 }
